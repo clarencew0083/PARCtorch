@@ -1,7 +1,7 @@
 import sys
 sys.path.append("../")
 
-from PARCtorch.PARCv2 import PARCv2
+import PARCtorch
 from differentiator.differentiator import ADRDifferentiator
 from integrator.rk4 import RK4
 import torch
@@ -14,7 +14,7 @@ def test_model(model=PARCv2()):
 
 def test_PARCv2():
     """ boiler-plate for minimal checking for variant of PARC follows the manuscript """ 
-    model = PARCv2()
+    model = PARCtorch.PARCv2()
 
     # model initialization
     test_model(model)
