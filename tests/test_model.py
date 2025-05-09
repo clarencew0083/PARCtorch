@@ -15,7 +15,7 @@ def test_model(model=PARCv2()):
 
 def test_PARCv2():
     """ boiler-plate for minimal checking for variant of PARC follows the manuscript """ 
-    model = PARCtorch.PARCv2()
+    model = PARCv2()
 
     # model initialization
     test_model(model)
