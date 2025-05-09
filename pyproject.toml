@@ -6,13 +6,13 @@ build-backend = "setuptools.build_meta"
 name = "PARCtorch"
 version = "0.3.0"
 authors = [
-  { name="Xinlun Cheng", email="xc7ts@virginia.edu" },
-  { name="Jack Beerman", email="jtb3sud@virginia.edu" },
-  { name="Stephen Baek", email="baek@virginia.edu" },
+  { name="Jzd" },
+
 ]
 description = "Physics-aware Recurrent Convolutional Neural Networks (PARCv2) in PyTorch"
 readme = "README.md"
 requires-python = ">=3.9"
+dependencies = []
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
@@ -25,6 +25,9 @@ adjoint = ["torchdiffeq"]
 
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+where = ["."]
 
 [tool.ruff]
 line-length = 79
