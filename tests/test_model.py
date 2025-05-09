@@ -1,7 +1,7 @@
 import sys
 sys.path.append("../")
 
-import PARCtorch
+from PARCtorch.PARCv2 import PARCv2
 from differentiator.differentiator import ADRDifferentiator
 from integrator.rk4 import RK4
 import torch
