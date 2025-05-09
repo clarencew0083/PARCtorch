@@ -30,7 +30,7 @@ where = ["."]
 
 [tool.ruff]
 line-length = 79
-exclude = ["./tests"]
+exclude = ["PARCtorch/tests"]
 
 [project.urls]
 Homepage = "https://github.com/baeklab/PARCtorch"
