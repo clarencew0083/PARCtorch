@@ -6,6 +6,7 @@ from PARCtorch.differentiator.differentiator import ADRDifferentiator
 from PARCtorch.integrator.rk4 import RK4
 import torch
 
+# test
 def test_model(model=PARCv2()):
     assert model.differentiator is not None
     assert model.integrator is not None
